@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050C5DE6C8CD09C9EBA4EEFC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA016D8842378B97E91FCCE0 /* SettingsView.swift */; };
+		0F5F00931DFFBE10FE0F71AE /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6D884E2E7328DB23D7A99A /* ChatScreen.swift */; };
+		1FB45AF0B665AB85E0613141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0F64970D85F0434D6EE44D /* Assets.xcassets */; };
+		25C91F6EE977ED5094E6C1AF /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41ECF26C79D6C6F31D34020E /* AppStore.swift */; };
+		47AC1100D43B42D66AB47A12 /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712458AAED59BCE70C27A94C /* ConnectView.swift */; };
+		4E517A5844F4858F2ED771E7 /* TranscriptRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCFC55C76A7A86D4D96C725 /* TranscriptRows.swift */; };
+		914E212F56A39E2C086D41C7 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507E31D9B4F6FA26894C57DA /* AppStoreTests.swift */; };
+		9473418D71BF4A8BCCCFE878 /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328C986E432FC2B5902858A9 /* UpdateChecker.swift */; };
+		B0D77166FC6118701F42393E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5172D275C2D62221260B53 /* Theme.swift */; };
+		D33AB52A364BCFDCEFBDF8CA /* DSHMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E0B479FB71518B55F8F038 /* DSHMobileApp.swift */; };
+		D6BFAFBC6EEC364554D56B0B /* ConversationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803FE00F2809C28436C0B6ED /* ConversationListView.swift */; };
+		DAD0FD2BB6B77784019C37E1 /* DSHApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA14D52D028E0CE86B2156C1 /* DSHApiClient.swift */; };
+		F8B6FD3E0DAAAAB09D93CA45 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F00A0EE5C976FE17EDDF8A /* Components.swift */; };
+		FAC9696C459A946E243FD159 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EDE4A1437A4FBC6661DADE /* Chat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE25EF831A30D2190A30D8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C70D1F38B73C35C6F37EFE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BB81B53D2E61171A03AB791;
+			remoteInfo = DSHMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16F00A0EE5C976FE17EDDF8A /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		1A75622327FDA1549409A9E8 /* DSHMobileTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = DSHMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CB7D506F1616F7800D23383 /* DSHMobile.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DSHMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		328C986E432FC2B5902858A9 /* UpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateChecker.swift; sourceTree = "<group>"; };
+		3D5172D275C2D62221260B53 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		41ECF26C79D6C6F31D34020E /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		507E31D9B4F6FA26894C57DA /* AppStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
+		5B0F64970D85F0434D6EE44D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66EDE4A1437A4FBC6661DADE /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		68E0B479FB71518B55F8F038 /* DSHMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSHMobileApp.swift; sourceTree = "<group>"; };
+		712458AAED59BCE70C27A94C /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		803FE00F2809C28436C0B6ED /* ConversationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationListView.swift; sourceTree = "<group>"; };
+		CA016D8842378B97E91FCCE0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CD6D884E2E7328DB23D7A99A /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		DA14D52D028E0CE86B2156C1 /* DSHApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSHApiClient.swift; sourceTree = "<group>"; };
+		FFCFC55C76A7A86D4D96C725 /* TranscriptRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptRows.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		010C9ED203E2E71564C4E58F /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				41ECF26C79D6C6F31D34020E /* AppStore.swift */,
+				328C986E432FC2B5902858A9 /* UpdateChecker.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		28C5E15964A0DEF6487353F3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				68E0B479FB71518B55F8F038 /* DSHMobileApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2D45960EC321970055E35A90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66EDE4A1437A4FBC6661DADE /* Chat.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33FE630D563E00331CD0B990 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				507E31D9B4F6FA26894C57DA /* AppStoreTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		52711451D9CF42F6F2160B05 /* DSHMobile */ = {
+			isa = PBXGroup;
+			children = (
+				5B0F64970D85F0434D6EE44D /* Assets.xcassets */,
+				AE0257ED626C35A97B5AF78A /* Sources */,
+				33FE630D563E00331CD0B990 /* Tests */,
+			);
+			path = DSHMobile;
+			sourceTree = "<group>";
+		};
+		5C13C1485842C6F0B5C60E10 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DA14D52D028E0CE86B2156C1 /* DSHApiClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		912E268989438D51A25BFCA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CB7D506F1616F7800D23383 /* DSHMobile.app */,
+				1A75622327FDA1549409A9E8 /* DSHMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0257ED626C35A97B5AF78A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28C5E15964A0DEF6487353F3 /* App */,
+				2D45960EC321970055E35A90 /* Models */,
+				5C13C1485842C6F0B5C60E10 /* Networking */,
+				010C9ED203E2E71564C4E58F /* Store */,
+				B7BB47EA63F112A89B15A1BB /* UI */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		B7BB47EA63F112A89B15A1BB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CD6D884E2E7328DB23D7A99A /* ChatScreen.swift */,
+				16F00A0EE5C976FE17EDDF8A /* Components.swift */,
+				712458AAED59BCE70C27A94C /* ConnectView.swift */,
+				803FE00F2809C28436C0B6ED /* ConversationListView.swift */,
+				CA016D8842378B97E91FCCE0 /* SettingsView.swift */,
+				3D5172D275C2D62221260B53 /* Theme.swift */,
+				FFCFC55C76A7A86D4D96C725 /* TranscriptRows.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C368C22A31C8E81DE7B35E83 = {
+			isa = PBXGroup;
+			children = (
+				52711451D9CF42F6F2160B05 /* DSHMobile */,
+				912E268989438D51A25BFCA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BB81B53D2E61171A03AB791 /* DSHMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEB472D5DB69E8B7EE89048A /* Build configuration list for PBXNativeTarget "DSHMobile" */;
+			buildPhases = (
+				90C1FD1C1EC0E9D131809569 /* Sources */,
+				CECF6E98CE39EE30D7FF9B1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSHMobile;
+			packageProductDependencies = (
+			);
+			productName = DSHMobile;
+			productReference = 2CB7D506F1616F7800D23383 /* DSHMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63C7FC734753E44656F7AF17 /* DSHMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAC40378DDA7894A3F471E5B /* Build configuration list for PBXNativeTarget "DSHMobileTests" */;
+			buildPhases = (
+				A1CCFAA30ECF392D60920EF4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				030860B212BF97E41D5D3BFC /* PBXTargetDependency */,
+			);
+			name = DSHMobileTests;
+			packageProductDependencies = (
+			);
+			productName = DSHMobileTests;
+			productReference = 1A75622327FDA1549409A9E8 /* DSHMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C70D1F38B73C35C6F37EFE43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4BB81B53D2E61171A03AB791 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A19ED1FDA539B2D8D1CAACB2 /* Build configuration list for PBXProject "DSHMobile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C368C22A31C8E81DE7B35E83;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 912E268989438D51A25BFCA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BB81B53D2E61171A03AB791 /* DSHMobile */,
+				63C7FC734753E44656F7AF17 /* DSHMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CECF6E98CE39EE30D7FF9B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB45AF0B665AB85E0613141 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90C1FD1C1EC0E9D131809569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C91F6EE977ED5094E6C1AF /* AppStore.swift in Sources */,
+				FAC9696C459A946E243FD159 /* Chat.swift in Sources */,
+				0F5F00931DFFBE10FE0F71AE /* ChatScreen.swift in Sources */,
+				F8B6FD3E0DAAAAB09D93CA45 /* Components.swift in Sources */,
+				47AC1100D43B42D66AB47A12 /* ConnectView.swift in Sources */,
+				D6BFAFBC6EEC364554D56B0B /* ConversationListView.swift in Sources */,
+				DAD0FD2BB6B77784019C37E1 /* DSHApiClient.swift in Sources */,
+				D33AB52A364BCFDCEFBDF8CA /* DSHMobileApp.swift in Sources */,
+				050C5DE6C8CD09C9EBA4EEFC /* SettingsView.swift in Sources */,
+				B0D77166FC6118701F42393E /* Theme.swift in Sources */,
+				4E517A5844F4858F2ED771E7 /* TranscriptRows.swift in Sources */,
+				9473418D71BF4A8BCCCFE878 /* UpdateChecker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CCFAA30ECF392D60920EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				914E212F56A39E2C086D41C7 /* AppStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		030860B212BF97E41D5D3BFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BB81B53D2E61171A03AB791 /* DSHMobile */;
+			targetProxy = AE25EF831A30D2190A30D8A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C6610161DC7CCE6E4DE759B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DSHMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.DSHMobile;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B1BF22043BC006CF8F79D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.DSHMobileTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSHMobile.app/DSHMobile";
+			};
+			name = Release;
+		};
+		99F6C1F2628C42290F832CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DSHMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.DSHMobile;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D774D1D912F81DC6683F0481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		D981D59EF7839159E043F383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		E5CDCDB633CF671BAB0AC63D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourname.DSHMobileTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSHMobile.app/DSHMobile";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A19ED1FDA539B2D8D1CAACB2 /* Build configuration list for PBXProject "DSHMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D981D59EF7839159E043F383 /* Debug */,
+				D774D1D912F81DC6683F0481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AAC40378DDA7894A3F471E5B /* Build configuration list for PBXNativeTarget "DSHMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CDCDB633CF671BAB0AC63D /* Debug */,
+				4B1BF22043BC006CF8F79D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FEB472D5DB69E8B7EE89048A /* Build configuration list for PBXNativeTarget "DSHMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99F6C1F2628C42290F832CD1 /* Debug */,
+				2C6610161DC7CCE6E4DE759B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C70D1F38B73C35C6F37EFE43 /* Project object */;
+}

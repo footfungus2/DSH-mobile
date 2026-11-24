@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Mobile bridge",
+    "description": "Opens a LAN port so the DSH Mobile iOS app can browse, archive, pin, and prompt this harness's sessions."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@local/mobile-bridge",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Left-sidebar entry that auto-opens a LAN port for DSH Mobile and logs device traffic.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.png", "mock-messages.json", "mock-attach.png"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-layout"]
+    }
+  }
+}

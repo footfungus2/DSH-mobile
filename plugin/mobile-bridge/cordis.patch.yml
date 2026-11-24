@@ -1,0 +1,4 @@
+- insert:
+    - id: mobile-bridge
+      name: '@local/mobile-bridge'
+      config: {}
