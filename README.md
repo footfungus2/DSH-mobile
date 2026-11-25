@@ -45,6 +45,16 @@ In the DeepSeek Harness desktop app:
 The bridge opens port `8328` on all interfaces at the next harness start and logs the reachable
 LAN addresses (`curl http://<your-machine-ip>:8328/health` to confirm).
 
+Or skip the manual steps — paste this into any coding agent running on the machine that hosts
+your harness:
+
+```text
+Set up DSH Mobile on this machine. Clone https://github.com/footfungus2/DSH-mobile and install
+the plugin/mobile-bridge Cordis plugin into my DeepSeek Harness workspace the same way the
+"Plugins → Add plugin" dialog does, then restart the harness so the bridge loads. Verify it with
+`curl http://localhost:8328/health` and tell me the LAN URL to enter in the DSH Mobile app.
+```
+
 ### 2. Connect the app
 
 Install the app (see below), open it, and enter the bridge URL —
