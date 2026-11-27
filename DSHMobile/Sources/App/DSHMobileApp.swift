@@ -8,6 +8,8 @@ struct DSHMobileApp: App {
     @AppStorage("appearance") private var appearance = "system"
     @Environment(\.scenePhase) private var scenePhase
     @State private var locked = DSHMobileApp.lockGateEnabled
+    @State private var needsAuth = DSHMobileApp.lockGateEnabled
+    @State private var isUnlocking = false
 
     private var colorScheme: ColorScheme? {
         switch appearance {
@@ -40,24 +42,38 @@ struct DSHMobileApp: App {
             .onChange(of: scenePhase) { _, phase in
                 guard Self.lockGateEnabled else { return }
                 switch phase {
-                case .background: if faceID { locked = true }
-                case .active: if faceID { Task { await unlock() } } else { locked = false }
+                case .background:
+                    if faceID { locked = true; needsAuth = true }
+                case .active:
+                    // `needsAuth` is set only by a real background→foreground
+                    // round-trip. The Face ID sheet dismisses through
+                    // .inactive → .active without touching it, so a successful
+                    // (or cancelled) prompt is never immediately re-asked.
+                    if !faceID { locked = false; needsAuth = false }
+                    else if needsAuth, !isUnlocking { needsAuth = false; Task { await unlock() } }
                 default: break
                 }
             }
-            .task { if Self.lockGateEnabled, faceID { await unlock() } }
+            .task { if Self.lockGateEnabled, faceID, needsAuth { needsAuth = false; await unlock() } }
         }
     }
 
     private func unlock() async {
+        guard faceID else { locked = false; return }
+        guard !isUnlocking else { return }
+
         let context = LAContext()
         var error: NSError?
         let hasBiometrics = context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error)
-        guard faceID, hasBiometrics else {
+        guard hasBiometrics else {
             // No biometrics enrolled (default simulator, fresh device): skip the gate.
             locked = false
             return
         }
+
+        isUnlocking = true
+        defer { isUnlocking = false }
+
         context.localizedFallbackTitle = "Use Passcode"
         do {
             let ok = try await context.evaluatePolicy(
@@ -65,6 +81,8 @@ struct DSHMobileApp: App {
                 localizedReason: "Unlock DSH Mobile")
             locked = !ok
         } catch {
+            // Cancelled / failed: stay locked so the gate holds — the user
+            // retries from the Unlock button instead of being re-prompted.
             #if DEBUG
             locked = false // Never deadlock the dev build on a cancelled prompt.
             #endif
