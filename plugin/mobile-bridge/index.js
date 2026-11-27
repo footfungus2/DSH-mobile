@@ -381,9 +381,13 @@ async function promptSession(sessionId, text, ip, model) {
   if (!text?.trim()) throw new Error('empty prompt');
   let id = sessionId;
   if (!id || id === 'new' || id.startsWith('local-')) {
-    const created = await host.sessionController.create({}, signal());
+    const list = typeof host.workspaceRegistry?.list === 'function' ? host.workspaceRegistry.list() : [];
+    const ws = list.length > 0
+      ? list.reduce((a, b) => ((b.sessionIds?.length ?? 0) > (a.sessionIds?.length ?? 0) ? b : a), list[0])
+      : undefined;
+    const created = await host.sessionController.create(ws ? { workspaceId: ws.id } : {}, signal());
     id = created.sessionId;
-    log(`new session ${id} created for prompt from ${ip}`);
+    log(`new session ${id} created for prompt from ${ip}${ws ? ` in workspace ${ws.title ?? ws.id}` : ''}`);
   }
   if (model?.includes('/')) {
     const [provider, ...rest] = model.split('/');
